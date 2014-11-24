@@ -1,0 +1,25 @@
+body{
+  background-image: url(../img/back2.gif);
+  background-size: contain;
+}
+
+.page{
+  width: 100%;
+}
+.boilermake{
+  size: 4em;
+  color: white;
+  font-family: 'FuturaStd', Fallback, sans-serif;
+}
+.center{
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 0px auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: FuturaStd;
+  src: url("../assets/FuturaStd-Book.otf") format("opentype");
+}

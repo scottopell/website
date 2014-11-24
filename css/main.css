@@ -1,0 +1,54 @@
+body{
+  /* background-image: url(../img/back2.gif);
+  background-size: contain; */
+  background-url: http://api.thumbr.it/whitenoise-361x370.png?background=ebebebff&noise=626262&density=15&opacity=15
+}
+
+.page{
+  width: 400px;
+  padding-top: 30px;
+}
+.title{
+  size: 4em;
+  color: black;
+  font-family: 'FuturaStd', Fallback, sans-serif;
+}
+
+.bio{
+  width: 350px;
+  display: inline;
+}
+
+.bio .profile{
+  width: 150px;
+  border-radius: 3px;
+  float: left;
+}
+
+.bio p{
+  width: 213px;
+  float: right;
+}
+
+.buttons {
+  padding-top: 50px;
+  width 300px;
+}
+
+@font-face {
+  font-family: FuturaStd;
+  src: url("../assets/FuturaStd-Book.otf") format("opentype");
+}
+
+.center{
+  margin: 0 auto;
+}
+
+.inner-center{
+  text-align: center;
+}
+
+.clear{
+  clear: both;
+}
+
