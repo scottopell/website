@@ -1,7 +1,4 @@
 body{
-  /* background-image: url(../img/back2.gif);
-  background-size: contain; */
-  background-url: http://api.thumbr.it/whitenoise-361x370.png?background=ebebebff&noise=626262&density=15&opacity=15
 }
 
 .page{
@@ -12,6 +9,10 @@ body{
   size: 4em;
   color: black;
   font-family: 'FuturaStd', Fallback, sans-serif;
+}
+
+.text{
+  font-family: 'open sans', Fallback, sans-serif;
 }
 
 .bio{
@@ -29,6 +30,9 @@ body{
   width: 213px;
   float: right;
 }
+
+
+.buttons a{text-decoration: none;}
 
 .buttons {
   padding-top: 50px;
@@ -51,4 +55,3 @@ body{
 .clear{
   clear: both;
 }
-
