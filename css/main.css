@@ -5,6 +5,7 @@ body{
   width: 400px;
   padding-top: 30px;
 }
+
 .title{
   size: 4em;
   color: black;
@@ -24,6 +25,7 @@ body{
   width: 150px;
   border-radius: 3px;
   float: left;
+  margin-top: 22px;
 }
 
 .bio p{
@@ -31,17 +33,54 @@ body{
   float: right;
 }
 
-
-.buttons a{text-decoration: none;}
-
 .buttons {
   padding-top: 50px;
   width 300px;
 }
 
+.tooltip {
+  opacity: 0;
+}
+
+.drawing {
+  font-size: 2em;
+  font-family: 'FuturaStdBold', Fallback, sans-serif;
+}
+
+.vertical-text {
+  transform: rotate(90deg);
+}
+
+.opell {
+  color: red;
+}
+
+.vertical-text.opell{
+  margin-top: 5px;
+  margin-left: 11px;
+}
+
+.buttons a{
+  text-decoration: none;
+  margin-left: 27px;
+  color: hsl(0,0%,0%);
+  font-size: 3em;
+  font-family: 'FuturaStdBold', Fallback, sans-serif;
+}
+
+.buttons a:hover{
+  cursor: pointer;
+  color: hsl(150,50%,50%);
+}
+
 @font-face {
   font-family: FuturaStd;
   src: url("../assets/FuturaStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: FuturaStdBold;
+  src: url("../assets/FuturaStd-Bold.otf") format("opentype");
 }
 
 .center{

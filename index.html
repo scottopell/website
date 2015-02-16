@@ -8,25 +8,52 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready( function(){
+      $(".buttons a").hover(function(){
+        $(this).html($(this).attr("title"));
+        //$('.tooltip').fadeTo('fast', 1);
+      }, function(){
+        //$(".tooltip").html('placeholder');
+        var old = $(this).html();
+        //$(this).html(old.charAt(0));
+        //$('.tooltip').fadeTo('fast', 0);
+      })
+    });
+  </script>
   <div class='page center'>
     <div class='bio'>
-      <h1 class='title'>Scott Opell</h1>
-      <div class='profile'></div>
-      <img src="img/profile.jpg" class='profile'></img>
-      <p class='text'>Interests: Long walks on the beach and vast mahogony furniture.</p>
+      <div class='nameplate'>
+        <h1 class='title'>Scott Opell</h1>
+      </div>
+    <div class='drawing inner-center'>
+      <div class='scott'>
+        sc<span class='opell'>o</span>tt
+      </div>
+      <div class='opell vertical-text'>
+        pell
+      </div>
+    </div>
+      <div class='clear'></div>
+      <img src="img/profile.jpg" alt='Profile Picture' class='profile'>
+      <p class='text'>Interests: Long walks on the beach and vast mahogany furniture.</p>
     </div>
     <div class='clear'></div>
-    <div class='buttons inner-center'>
-      <a href='https://github.com/scottopell'>
-        <i class="fa fa-github fa-5x"></i>
-      </a>
-      <a href='https://www.dropbox.com/s/3h10gi2kaq9sval/Resume--ScottOpell--Sept2014.pdf?dl=0'>
-        <i class="fa fa-file-text-o fa-5x"></i>
-      </a>
-      <a href='https://www.linkedin.com/profile/view?id=236550339&trk=nav_responsive_tab_profile_pic'>
-        <i class="fa fa-linkedin fa-5x"></i>
-      </a>
+    <div class='buttons'>
+      <h3 class='text'>Links</h3>
+      <div class='inner-center'>
+        <a href='https://github.com/scottopell' class='github' title='github'>github</a>
+        <br>
+        <a href='https://www.dropbox.com/s/3h10gi2kaq9sval/Resume--ScottOpell--Sept2014.pdf?dl=0' class='resume' title='resume'>resume</a>
+        <br>
+        <a href='https://www.linkedin.com/profile/view?id=236550339&trk=nav_responsive_tab_profile_pic' class='linkedin' title='linkedin'>linkedin</a>
+        <br>
+        <a href='http://blog.scottopell.com/' class='blog' title='blog'>blog</a>
+      </div>
     </div>
+    <hr/>
+    <div class='tooltip text inner-center'>Placeholder</div>
     <div class='presentations'>
       <h3 class='text'>Presentations</h3>
       <ul class='text'>
